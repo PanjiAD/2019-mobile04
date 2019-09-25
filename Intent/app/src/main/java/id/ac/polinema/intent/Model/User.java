@@ -38,7 +38,6 @@ public class User implements Parcelable {
         this.age = age;
     }
 
-
     @Override
     public int describeContents() {
         return 0;

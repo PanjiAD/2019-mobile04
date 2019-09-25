@@ -26,14 +26,13 @@ public class ParcelableActivity extends AppCompatActivity {
         inputAge = findViewById(R.id.input_age);
     }
 
-
     public void handelSubmit(View view) {
         String username = inputUsername.getText().toString();
         String name = inputName.getText().toString();
         int age = Integer.parseInt(inputAge.getText().toString());
 
         User user = new User(username, name, age);
-        Intent intent = new Intent(this, ProfileBundleActivity.class);
+        Intent intent = new Intent(this, ProfileParcelableActivity.class);
         intent.putExtra(USER_KEY, user);
 
         startActivity(intent);
